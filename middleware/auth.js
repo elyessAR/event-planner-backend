@@ -18,6 +18,7 @@ const auth = async (req, res, next) => {
     next();
   } catch (error) {
     console.log(error);
+    console.log('you are not authorized to execute this action');
   }
 };
 
